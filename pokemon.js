@@ -14,14 +14,13 @@ function getPokemonFetch(pokemonName) {
     .then(response => response.json())
     .then(data => {
       let abilities = data.abilities.map(ability => ability.ability.name);
-      let tableHTML = generateTableHTML(data.name, data.sprites.front_default, abilities);
+      let tableHTML = generateTableHTML(data.name, data.sprites.other.home.front_default, abilities);
       pokemon2.innerHTML = tableHTML;
     })
     .catch(error => {
       pokemon2.innerHTML = `<p class="error">No se encontró el Pokemon.</p>`;
     });
 }
-
 function generateTableHTML(name, imageUrl, abilities) {
     let tableHTML = `<table class="pokemon-table">
                         <tr>
