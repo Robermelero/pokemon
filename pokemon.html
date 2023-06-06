@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pokemon.css">
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <div class="info">
+                <video id="background-video" autoplay loop muted>
+                    <source src="./rayquaza-between-clouds-wallpaper.mp4" type="video/mp4">
+                </video>
+            </div>
+            <form id="pokemon">
+                <label for="pokemonName">Nombre del Pokemon:</label>
+                <input type="text" id="pokemonName" required>
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="tablaHabilidades"></div>
+        </div>
+        <script src="./pokemon.js"></script>
+    </main>
+</body>
+
+</html>
